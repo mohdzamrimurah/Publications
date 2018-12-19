@@ -50,7 +50,7 @@
 
 
 
-\documentclass[conference]{IEEEtran}
+\documentclass[conference,letterpaper]{IEEEtran}
 % Some Computer Society conferences also require the compsoc mode option,
 % but others use the standard conference format.
 %
@@ -158,7 +158,8 @@
 
 % *** MATH PACKAGES ***
 %
-%\usepackage{amsmath}
+\usepackage[cmex10]{amsmath}
+\usepackage{color}
 % A popular package from the American Mathematical Society that provides
 % many useful and powerful commands for dealing with mathematics.
 %
@@ -175,6 +176,7 @@
 \usepackage[caption=false,font=footnotesize]{subfig}
 
 \renewcommand{\thispagestyle}[2]{}
+
 \fancypagestyle{plain}{
 	\fancyhead{}
 	\fancyhead[C]{first page center header}
@@ -191,14 +193,15 @@
 %Enter the first page number of your paper below
 \setcounter{page}{1}
 
-\fancyhead[R]{\textit{(IJACSA) International Journal of Advanced
-		Computer Science and Applications, \\ Vol. XXX, No. XXX, 2018}}
+%Header
+\fancyhead[R]{\textit{(IJACSA) International Journal of Advanced Computer Science and Applications, \\ Vol. XXX, No. XXX, 2014}}
 \renewcommand{\headrulewidth}{0pt}
+
 
 %Footer
 \fancyfoot[C]{www.ijacsa.thesai.org}
 \renewcommand{\footrulewidth}{0.5pt}
-\fancyfoot[R]{\thepage\ $|$ Page}
+\fancyfoot[R]{\thepage \  $|$ Page }
 
 
 % *** SPECIALIZED LIST PACKAGES ***
@@ -335,7 +338,6 @@
 
 
 % correct bad hyphenation here
-\hyphenation{op-tical net-works semi-conduc-tor}
 \usepackage{multirow}
 
 \begin{document}
@@ -346,19 +348,17 @@
 % not capitalized unless they are the first or last word of the title.
 % Linebreaks \\ can be used within to get better formatting as desired.
 % Do not put math or special symbols in the title.
-\title{Security Assessment of Libyan Government websites}
+\title{Web Assessment of Libyan Government E-government Services}
 
 
 % author names and affiliations
 % use a multiple column layout for up to three different
 % affiliations
-\author{\IEEEauthorblockN{Abdullah Ahmed Ali\\
-		Mohd Zamri Murah}
-\IEEEauthorblockA{\textit{Center for Cybersecurity} \\
-\textit{Universiti Kebangsaan Malaysia}\\
+\author{\IEEEauthorblockN{Mohd Zamri Murah, Abdullah Ahmed Ali}
+\IEEEauthorblockA{Center for Cybersecurity,\\
+Universiti Kebangsaan Malaysia,\\
 Malaysia\\
-email: abdullah.alhanash@gmail.com\\
-zamri@ukm.edu.my}}
+email: zamri@ukm.edu.my, abdullah.alhanash@gmail.com}}
 
 % conference papers do not typically use \thanks and this command
 % is locked out in conference mode. If really needed, such as for
@@ -399,14 +399,14 @@ zamri@ukm.edu.my}}
 \begin{abstract}
 
   Libya has started transferring traditional government services into
-  e-government. The e-government initiative involves the use of
+  e-government services. The e-government initiative involves the use of
   websites to offer various services such as civil registration,
   financial transaction and private information handling.  Currently,
   there has not been many studies about the security assessment of the
   Libyan government websites. Therefore, in this paper, we did a
-  security assessment of 16 Libyan government websites. The main
+  web security assessment of 16 Libyan government websites. The main
   purpose of this study is to determine the security level of these
-  websites.  The security assessment was done in four phases:
+  websites.  The web security assessment was done in four phases:
   Reconnaissance, Enumeration and Scanning, Vulnerability assessment
   (web vulnerabilities and SSL encryption evaluation) and Content
   Analysis(security and privacy policies). The results showed that 9
@@ -418,7 +418,7 @@ zamri@ukm.edu.my}}
   government websites are adequately secured without major security
   issues. Since these Libyan government websites deal with sensitive
   data, adequate security measures should be implemented to reduce the
-  vulnerabilities and to mitigate future cybersecurity attacks.
+  vulnerabilities and to mitigate future cyber security attacks.
 
 \end{abstract}
 
@@ -426,7 +426,7 @@ zamri@ukm.edu.my}}
 
 
 \begin{IEEEkeywords}
-  Libya, E-government, Security Assessment, Information Security,
+  Libya, E-government, Web Security Assessment, Information Security,
   Website Vulnerability, Penetration Testing.
 \end{IEEEkeywords}
 
