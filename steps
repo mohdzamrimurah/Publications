@@ -1,0 +1,5 @@
+git add .
+git commit
+git push origin master # from local to github
+git pull # update from github
+
